@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../img/header/logo.png'; // Make sure the path is correct
+import logo from '../img/header/logo.png'; // Ensure the logo path is correct
+import MobileNav from './MobileNav'; // Import MobileNav component
 
 const Header = () => {
   return (
@@ -16,8 +17,8 @@ const Header = () => {
           </span>
         </div>
 
-        {/* Navigation */}
-        <nav>
+        {/* Desktop Navigation (Hidden on Mobile) */}
+        <nav className="hidden lg:block">
           <ul className="flex space-x-4">
             <li>
               <Link to="/about" className="text-gray-800 hover:text-gray-500">
@@ -36,6 +37,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
+        {/* Mobile Navigation */}
+        <MobileNav />
       </div>
     </header>
   );
