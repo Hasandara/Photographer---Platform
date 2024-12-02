@@ -1,11 +1,19 @@
 import React from 'react'
 
-const Header = () => {
-  return (
-    <div>
-      Header
-    </div>
-  )
-}
+import Socials from './Socials';
+import MobileNav from './MobileNav';
 
-export default Header
+import { Link } from 'react-router-dom';
+
+const Header = () => {
+  return(
+    <header className='bg-pink-200 fixed w-full px-[30px]lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center'>
+      Header
+    
+    </header>
+
+  );
+  
+};
+
+export default Header;
