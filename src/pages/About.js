@@ -2,10 +2,8 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
-      About
-    </div>
+    <section className='section bg-yellow-200'>About</section>
   )
-}
+};
 
-export default About
+export default About;
