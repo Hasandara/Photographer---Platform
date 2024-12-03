@@ -18,13 +18,13 @@ const menuVariants = {
 
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  
+
   return (
     <nav className="xl:hidden">
-      {/* Nav open button */}
+      {/* Nav open button on the right side */}
       <div
         onClick={() => setOpenMenu(true)}
-        className="text-3xl cursor-pointer"
+        className="text-3xl cursor-pointer ml-auto"
       >
         <CgMenuRight />
       </div>
