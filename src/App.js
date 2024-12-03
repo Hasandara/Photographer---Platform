@@ -2,9 +2,7 @@ import React from "react";
 import './App.css'
 import Header from './components/Header';
 import AnimRoutes from './components/AnimRoutes';
-import BigAnimation from './components/BigAnimation';
-import BottomGrid from "./components/BottomGrid";
-import Hero from "./components/Hero";
+import BgAnimation from './components/BgAnimation'
 
 
 import { BrowserRouter as Router } from "react-router-dom";
